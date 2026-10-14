@@ -7,9 +7,11 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
 import 'data.dart';
+import 'screens/bm.dart';
 import 'screens/guide.dart';
 import 'screens/history.dart';
 import 'screens/home.dart';
+import 'screens/quiz.dart';
 import 'screens/supplies.dart';
 import 'screens/varieties.dart';
 import 'theme.dart';
@@ -74,6 +76,29 @@ class _ShellState extends State<Shell> {
   ];
 
   void go(int i) => setState(() => _tab = i);
+
+  // Screenshot hook: --dart-define=KOI_ROUTE=variety:kohaku | chapter:3 | bm | feeding | quiz
+  // opens that screen on top of the shell. Empty in normal builds.
+  static const _route = String.fromEnvironment('KOI_ROUTE');
+
+  @override
+  void initState() {
+    super.initState();
+    if (_route.isEmpty) return;
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      final d = KoiScope.of(context).data;
+      final parts = _route.split(':');
+      final Widget? page = switch (parts.first) {
+        'variety' => VarietyDetail(d.varieties.firstWhere((v) => v.slug == parts.last)),
+        'chapter' => ChapterReader(start: int.parse(parts.last) - 1),
+        'bm' => const BMScreen(),
+        'feeding' => const FeedingScreen(),
+        'quiz' => const Scaffold(body: QuizScreen()),
+        _ => null,
+      };
+      if (page != null) Navigator.push(context, MaterialPageRoute(builder: (_) => page));
+    });
+  }
 
   @override
   Widget build(BuildContext context) {
