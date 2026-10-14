@@ -1,3 +1,4 @@
+# RETIRED 2026-10-14: the app icon now comes from the brand logo (tools/apply_logo.py). Kept for history.
 # KoiKnife app icon: one Kohaku curving through night-pond water.
 # Same spine/width model as lib/pond.dart so the icon matches the in-app fish.
 import math, sys
