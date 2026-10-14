@@ -83,6 +83,10 @@ class HomeScreen extends StatelessWidget {
                         fit: BoxFit.scaleDown,
                         alignment: Alignment.centerLeft,
                         child: Row(mainAxisSize: MainAxisSize.min, children: [
+                          // J's brand logo (2026-10-14), circle-cut so it floats on the pond
+                          Image.asset('assets/brand/logo_round.png', width: 56, height: 56,
+                              semanticLabel: 'KoiKnife logo'),
+                          const SizedBox(width: 12),
                           Text('KoiKnife', style: t.displaySmall?.copyWith(fontSize: 40)),
                           const SizedBox(width: 10),
                           const Text('鯉', style: TextStyle(fontSize: 34, color: KoiColors.red)),
