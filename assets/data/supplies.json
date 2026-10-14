@@ -1,0 +1,58 @@
+{
+  "intro": "Fish, plants, and the parts that keep it all running. Stock moves with the season, so call B&M ahead if you're driving out for something specific. Prices aren't listed: B&M would rather tell you real numbers than guesses.",
+  "gear": [
+    {"id": "filtration", "icon": "filter", "title": "Pumps & filtration", "lead": "The life-support system.",
+     "items": ["Pump sized for 1–2× pond turnover per hour", "Skimmer: catches leaves before they sink", "Biofalls or pressure/bead filter", "UV clarifier, for green water", "Replacement media, seals and UV lamps", "Fittings, valves and unions"],
+     "tip": "Mechanical filtration before biological. And when a pump 'dies', check the intake first. It's usually clogged, not broken."},
+    {"id": "aeration", "icon": "air", "title": "Aeration", "lead": "Oxygen is what kills ponds suddenly.",
+     "items": ["Air pump", "Diffusers / air stones", "De-icer for winter", "Lake & farm-pond bottom aeration for big water"],
+     "tip": "Warm water holds less oxygen. Aeration matters most overnight and in a heatwave."},
+    {"id": "food", "icon": "food", "title": "Food", "lead": "Feed the water temperature, not the calendar.",
+     "items": ["Staple koi pellets", "Wheat-germ (low-protein) food for cool water", "Growth / colour food for peak summer", "Treats, sparingly"],
+     "tip": "Stop feeding once the water is consistently below 50°F. Fish cannot digest what they cannot metabolise."},
+    {"id": "testing", "icon": "science", "title": "Treatments & testing", "lead": "Test the water before you treat the fish.",
+     "items": ["Test kit: ammonia, nitrite, nitrate, pH, KH (alkalinity)", "Pond thermometer", "Water conditioner / dechlorinator", "Beneficial bacteria", "Algae control", "Medications (after a diagnosis, not before)"],
+     "tip": "Most fish health problems are water problems in disguise. Bring B&M a sample in a clean jam jar and they'll read the numbers with you."},
+    {"id": "construction", "icon": "construction", "title": "Liner & construction", "lead": "The unglamorous half of every pond that works.",
+     "items": ["EPDM liner", "Underlay", "Flexible tubing", "Valves and fittings", "Bottom drain (koi ponds)"],
+     "tip": "Koi ponds in this climate are built to about 4 ft, with a bare sloped floor and a bottom drain."},
+    {"id": "netting", "icon": "shield", "title": "Netting & predators", "lead": "Herons are a real problem, not a theoretical one.",
+     "items": ["Leaf netting for autumn", "Heron deterrents", "Depth: 4 ft defeats a wading heron", "Fish caves / hiding places"],
+     "tip": "Net before the leaves fall, not after. Leaves on the bottom become next spring's water problem."},
+    {"id": "plants", "icon": "plant", "title": "Aquatic plants", "lead": "Grown on site, so they arrive awake.",
+     "items": ["Water lilies, hardy and tropical", "Lotus, if you have the depth", "Marginals: iris, rush, pickerel, arrowhead", "Oxygenators", "Floaters, for shade and against algae"],
+     "tip": "Ask which are hardy in zone 6 and which to treat as annuals. That decides whether you buy a plant once or every year."}
+  ],
+  "year": [
+    {"when": "Late March – April", "water": "Rising through the 40s and 50s", "color": "#5FA3A0",
+     "what": "Open up and clean out before the water passes the mid-50s. Restart filtration. Fish are waking, but their immune systems lag behind the temperature. This is when problems start."},
+    {"when": "May – June", "water": "60s and up", "color": "#6DB56D",
+     "what": "The busiest weeks of the year. Plants go in, fish are stocked, everything grows, including the algae. Expect a green phase while the system balances."},
+    {"when": "July – August", "water": "70s and warm", "color": "#E0A030",
+     "what": "Warm water holds less oxygen. Aeration matters most now, especially overnight and in a heatwave. Watch for string algae and evaporation."},
+    {"when": "September – October", "water": "Falling", "color": "#E36A1E",
+     "what": "Net before the leaves drop, not after. Switch to a wheat-germ food as the water cools."},
+    {"when": "November – December", "water": "Below 50°F, then colder", "color": "#8E7CC3",
+     "what": "Stop feeding once the water is consistently cold. Close down and prepare for ice."},
+    {"when": "January – February", "water": "Frozen", "color": "#5B8DB8",
+     "what": "Keep an opening in the ice with a de-icer and an air stone. Don't smash the ice: the shock is what harms fish. Otherwise, leave them alone."}
+  ],
+  "yearNote": "Written for USDA zone 6: New Jersey, eastern Pennsylvania, the Hudson Valley, downstate New York and Connecticut. In zone 7, everything happens two to three weeks earlier.",
+  "water": [
+    {"test": "Ammonia", "good": "0 ppm", "why": "Fish waste and rotting food. Toxic even at low levels: the first number to check when fish look unwell."},
+    {"test": "Nitrite", "good": "0 ppm", "why": "The half-way stage of the nitrogen cycle. Any reading means the filter bacteria are behind."},
+    {"test": "Nitrate", "good": "Low (under about 40 ppm)", "why": "The end product. Plants and water changes keep it down; high nitrate feeds algae."},
+    {"test": "pH", "good": "Stable, about 7–8.5", "why": "Stability matters more than the exact number. Sudden swings stress fish."},
+    {"test": "KH (alkalinity)", "good": "Above about 80 ppm", "why": "The buffer that keeps pH from crashing, often overnight in a heavily planted pond."},
+    {"test": "Temperature", "good": "Know it daily", "why": "Sets feeding, the pond calendar and oxygen levels. Measure the water, not the air."}
+  ],
+  "waterNote": "General hobby targets, not veterinary advice. The overwhelming majority of fish health problems are water problems in disguise.",
+  "faq": [
+    {"q": "Do the fish survive the winter?", "a": "Yes, in a pond deep enough, with an opening kept in the ice. They go dormant near the bottom. The danger is not cold water: it is a completely sealed surface, where gases build up with nowhere to go."},
+    {"q": "De-icer or aerator?", "a": "Both, ideally. The de-icer holds an opening; the air stone keeps gas moving. Set the air stone shallow so it doesn't stir up the warmer water the fish are resting in."},
+    {"q": "Why is my water green?", "a": "Usually suspended algae feeding on excess nutrients: often too many fish, too much food, or not enough plants. Green water is a symptom, not a disease. Treating it without fixing the cause just resets the clock."},
+    {"q": "How many fish can I keep?", "a": "Fewer than you want to. Koi grow, and stocking for the fish you have today is how ponds end up overloaded in three years. Ask B&M with your actual dimensions."},
+    {"q": "Do I need a UV?", "a": "For green water, it works. For string algae, it does nothing: different organism, different fix. Know which problem you have first."},
+    {"q": "Something's wrong with a fish.", "a": "Test the water before you treat the fish. Bring B&M a water sample: a clean jar is enough. Reading the numbers together takes ten minutes and saves guessing at treatments."}
+  ]
+}

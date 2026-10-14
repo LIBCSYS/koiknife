@@ -1,0 +1,164 @@
+{
+  "intro": {
+    "title": "Almost everything written about koi is wrong.",
+    "body": "Not maliciously. Koi history is one of those subjects where a handful of English sentences got written down in the twentieth century, and everyone since has copied each other. B&M Aquatics went and checked: Japanese prefectural records, Chinese dynastic texts, peer-reviewed mitochondrial genetics, the OED, and the koi associations' own chronologies. A hundred and seven claims, thirty-seven of them contested enough to need a second opinion. The true story is considerably stranger than the marketing version.",
+    "image": "kh-hero"
+  },
+  "chapters": [
+    {
+      "n": 1,
+      "title": "The word is younger than the aeroplane",
+      "kicker": "錦鯉 nishikigoi — \"brocade carp\"",
+      "image": "kh-kuniyoshi-black",
+      "caption": "Utagawa Kuniyoshi, c. 1837. A carp painted a lifetime before anyone called one a brocade carp.",
+      "body": [
+        "Nishikigoi is not an ancient name. It is a Taishō-era coinage that only became standard around 1940.",
+        "Dealers routinely claim the word is two hundred years old. Niigata Prefecture, Ojiya City and Nagaoka City all disagree. What is two centuries old is the breeding; the word is younger than powered flight.",
+        "It is credited, hedged in Japanese as \"it is said\", to Abe Kei, a prefectural fisheries official who saw a Taishō Sanshoku at a village show and reportedly said \"this is truly a brocade carp.\"",
+        "Before that the fish had at least six names: irogoi (coloured carp), hanagoi (flower carp), moyōgoi (patterned carp), madaragoi (spotted carp) and kawarigoi (odd carp)."
+      ],
+      "callout": {"kind": "fact", "text": "At the 1914 Tokyo exposition that made these fish famous, they were billed as \"Echigo's odd carp.\" The word nishikigoi did not yet exist at the moment koi became famous."}
+    },
+    {
+      "n": 2,
+      "title": "The love story is a mistranslation of a mistranslation",
+      "kicker": "鯉 koi · 恋 koi",
+      "image": "kh-kuniyoshi-red",
+      "caption": "A higoi (red carp) under wisteria, in art well before the breeders fixed the colour.",
+      "body": [
+        "You will have read that koi sounds like the Japanese word for love, so koi are given as tokens of affection. The first half is true. The second half appears to have been invented in English.",
+        "The pun is real but young. In eighth-century Japanese, carp was ko₁pi₁ and love was ko₁pi₂: different syllables. They only merged when an Old Japanese vowel distinction collapsed in the ninth and tenth centuries.",
+        "Japanese speakers don't hear it anyway. Compounds voice the second element (nishiki-goi, ma-goi, hi-goi) but love never does (hatsu-koi, kata-koi).",
+        "Even the Latin is disputed: Cyprinus may come from Kypris (Aphrodite) or from kypros, \"henna-coloured\". Neither is proven."
+      ],
+      "callout": {"kind": "myth", "text": "Myth: koi are traditional gifts of love. The claim traces to an uncited sentence in English Wikipedia. Japanese sources give a different meaning: 立身出世, worldly success and career advancement."}
+    },
+    {
+      "n": 3,
+      "title": "Koi are not common carp, and their closest relative is Chinese",
+      "kicker": "Cyprinus rubrofuscus — the Amur carp",
+      "image": "kh-bleeker",
+      "caption": "Cyprinus rubrofuscus in Bleeker's nineteenth-century plate. This, not the European common carp, is what a koi is.",
+      "body": [
+        "Practically every book says koi are Cyprinus carpio, the common carp of Europe. They are not. They descend from Cyprinus rubrofuscus, the Amur carp of East Asia, a separate species.",
+        "Mitochondrial, microsatellite and genomic DNA all show a clean split between European and East-Asian populations. Eschmeyer's Catalog and ITIS now treat rubrofuscus as its own species.",
+        "Japan even has its own native carp, a Lake Biwa lineage that split off 1.7 to 2.5 million years ago, and it is not what koi came from.",
+        "Peer-reviewed mitogenomics (Mabuchi et al., 2014) found Japanese koi mitochondrially identical to the Oujiang colour carp, a red-and-white food fish farmed in Zhejiang rice paddies for around twelve hundred years."
+      ],
+      "callout": {"kind": "fact", "text": "By maternal DNA, koi's closest documented relative is Chinese, and it is a peasant crop, not a Japanese ornamental."}
+    },
+    {
+      "n": 4,
+      "title": "The Chinese head start, and the wrong fish",
+      "kicker": "The Dragon Gate",
+      "image": "kh-dragongate",
+      "caption": "Qing-dynasty brick carving, Yangzhou. Carp leaping the gate on the Yellow River to become dragons.",
+      "body": [
+        "Every koi history cites Chinese records of coloured carp from the fourth and fifth centuries. Those records are real, but they describe the ancestors of the goldfish (Carassius auratus), not Cyprinus.",
+        "China's genuine parallel is less famous: Oujiang colour carp and Xingguo red carp, red-and-white patterned Cyprinus still farmed in paddies.",
+        "Japan's ornamental-fish culture also began with an import: the goldfish, traditionally at Sakai in 1502. Koi arrived three centuries later into a hobby that already existed, including viewing fish from above (uwami).",
+        "The Dragon Gate legend originally had no carp in it. Early texts speak of \"fish and turtles\". The carp only arrives in the Taiping Guangji version of 978 CE."
+      ],
+      "callout": {"kind": "myth", "text": "Myth: \"The Nihon Shoki records coloured carp in 720 AD.\" The passage mentions carp in a pond and says nothing about colour."}
+    },
+    {
+      "n": 5,
+      "title": "Snow country, and ponds never built for fish",
+      "kicker": "Yamakoshi & Ojiya, Niigata",
+      "image": "kh-terraces",
+      "caption": "The terraced ponds of Yamakoshi, Niigata.",
+      "body": [
+        "The real story starts in the mountain hamlets of the old Nijūmura-gō district, today Yamakoshi and Ojiya in Niigata. Deep snow, steep ground, rice.",
+        "Cold groundwater damages rice. The topmost terrace was a solar heating basin, and raising carp in it was explicitly a secondary use.",
+        "Snowed in for months, villages kept black magoi as winter protein. Magoi, \"true carp\", is a retronym, needed only once coloured mutants existed.",
+        "Mottled carp were recorded in Shizuoka in 1843. Colour happened in lots of places. What Niigata alone had was a century of sustained selection."
+      ],
+      "callout": {"kind": "fact", "text": "In 1875 the coloured-carp market became such a speculative bubble that Niigata Prefecture banned ornamental carp breeding outright. The breeders had to petition to get it lifted."}
+    },
+    {
+      "n": 6,
+      "title": "The varieties, and which dates hold up",
+      "kicker": "Roughly half is tradition, not record",
+      "image": "kh-showa",
+      "caption": "Shōwa Sanshoku.",
+      "body": [
+        "Kohaku: credited to Hiroi Kunizō at Utogi and the extinct Gosuke line. Traditional date 1888, but sources give 1804–29, 1889 or 1917.",
+        "Taishō Sanke, about 1915. \"Sanke\" is not short for Sanshoku. It fossilises the older spelling 三毛, \"three-hair\", the same word as mikeneko, the calico cat.",
+        "Shōwa Sanshoku, 1927, by Hoshino Shigekichi. The Showa you can buy is really a 1964 fish (Kobayashi); the 1927 originals had a grey ground and striped fins.",
+        "Ogon, from Sawata Aoki's line: the founder was caught in 1921 and the variety took a quarter-century to fix.",
+        "Shusui, 1910s: made in Tokyo by a goldfish dealer from scaleless German carp. Not a Niigata fish at all.",
+        "Asagi is the orphan: the oldest variety, and the only one with no founder and no date."
+      ],
+      "callout": {"kind": "fact", "text": "Doitsu koi carry a lethal gene. Scaleless × scaleless crosses lose about a quarter of the brood at hatching."}
+    },
+    {
+      "n": 7,
+      "title": "1914: the one date with a paper trail",
+      "kicker": "Tokyo Taishō Exposition, Ueno",
+      "image": "kh-sato",
+      "caption": "Nishikigoi no Sato, Ojiya.",
+      "body": [
+        "The Ueno exposition is where koi stopped being a provincial oddity. It is the only major date in koi history with a printed record behind it, and the popular version still gets three things wrong.",
+        "It was a silver medal, not gold.",
+        "Hirohito was a schoolboy of twelve or thirteen, not Crown Prince until 1916 and not emperor for another twelve years.",
+        "It wasn't koi's first show either. That was 1912, in a primary school in Kizawa village."
+      ],
+      "callout": {"kind": "myth", "text": "Myth: \"Koi won gold and were presented to Emperor Hirohito.\" Silver medal, and he was a schoolboy."}
+    },
+    {
+      "n": 8,
+      "title": "The plastic bag, and the fish that died",
+      "kicker": "How koi went global",
+      "image": "kh-show",
+      "caption": "A koi show in Nagaoka.",
+      "body": [
+        "Koi went global on an unglamorous invention: the oxygen-filled plastic shipping bag, which in the 1960s made a living fish air-freightable.",
+        "Exports started earlier. 300 koi went to the 1939 Golden Gate International Exposition in San Francisco, not the New York World's Fair as usually stated.",
+        "Niigata is the birthplace; Hiroshima is the power. Sakai Fish Farm had taken thirteen All Japan Grand Championships by 2024.",
+        "The 2021 All Japan Grand Champion, a 102 cm Kohaku, was owned by a collector from mainland China."
+      ],
+      "callout": {"kind": "fact", "text": "S Legend sold for ¥203 million on 4 October 2018, the most ever paid for a koi. She died within the one-year warranty, and the breeder settled with a ¥100 million replacement."}
+    },
+    {
+      "n": 9,
+      "title": "The same fish, on the other side of the ledger",
+      "kicker": "Treasure and invader",
+      "image": "kh-mirror",
+      "caption": "Edo-period bronze mirror with carp.",
+      "body": [
+        "Carp is simultaneously one of the most valuable ornamental animals on earth and one of the most destructive invasive species.",
+        "The US government built carp ponds on the National Mall and in 1882 mailed 260,000 carp to 298 of 301 congressional districts.",
+        "Koi are illegal in Australia, which has spent over A$13 million evaluating the deliberate release of koi herpesvirus into the Murray–Darling.",
+        "In New Zealand actual koi are an \"unwanted organism\", up to 80% of fish biomass in the lower Waikato.",
+        "Koi herpesvirus (KHV) was first isolated in Israel in 1998; Japan's 2003 outbreak killed 660 tonnes of carp on Lake Kasumigaura."
+      ],
+      "callout": {"kind": "fact", "text": "Sakai hatches roughly 32 million koi a year and discards about 97% at the first cull. Every show fish stands on an industrial scale of rejection."}
+    },
+    {
+      "n": 10,
+      "title": "2004: the ground that made the industry destroyed it",
+      "kicker": "The Chūetsu earthquake",
+      "image": "kh-quake",
+      "caption": "Landslide damage from the 2004 Chūetsu earthquake.",
+      "body": [
+        "On 23 October 2004 the Chūetsu earthquake hit Yamakoshi directly. The terraced ponds slumped into landslide benches. The geology that made koi possible buried them.",
+        "The village was evacuated entirely. Koi were lifted out by helicopter.",
+        "Twenty years on, Yamakoshi has about 750 residents against a pre-quake 2,100, and more than 1,600 NFT \"digital villagers\" who vote on the local budget.",
+        "In 2023 China let the export quarantine registration for Niigata lapse amid the Fukushima water dispute. China had taken around a fifth of Japan's koi exports."
+      ],
+      "callout": {"kind": "fact", "text": "A food fish, kept in heating basins by snowed-in rice farmers. Somebody noticed a coloured one and did not eat it. Nobody needed to embroider that."}
+    }
+  ],
+  "art": [
+    {"image": "kh-hokusai", "title": "Two carp in a cascade", "artist": "Katsushika Hokusai", "text": "The Dragon Gate motif at its most muscular: two fish fighting a vertical river."},
+    {"image": "kh-kintaro", "title": "Kintarō and the carp", "artist": "Tsukioka Yoshitoshi, 1882", "text": "The boy-hero astride a giant carp: strength and perseverance in one image."},
+    {"image": "kh-kaidomaru", "title": "Kaidōmaru's carp", "artist": "Woodblock", "text": "Wrestling a giant carp beneath a waterfall. The fish as worthy opponent."},
+    {"image": "kh-eisen", "title": "Ascending", "artist": "Keisai Eisen", "text": "The most repeated image in the whole tradition, and it predates koi entirely."},
+    {"image": "kh-hiroshige-carp", "title": "Against the fall", "artist": "Utagawa Hiroshige, 1852", "text": "Hiroshige's carp, sixty years before Niigata's fish reached Tokyo."},
+    {"image": "kh-kuniyoshi-red", "title": "Red carp, wisteria", "artist": "Utagawa Kuniyoshi", "text": "A higoi in art well before the breeders fixed the colour."},
+    {"image": "kh-surimono", "title": "Among the weeds", "artist": "Katsushika Taito II", "text": "A privately printed Edo deluxe edition, metallic pigments and all."},
+    {"image": "kh-snow", "title": "Snow country", "artist": "Suzuki Bokushi, 1837", "text": "Snow crystals from Hokuetsu Seppu, the classic account of the Niigata winters."},
+    {"image": "kh-kyoto", "title": "Koinobori over Kyoto", "artist": "Louis Dumoulin", "text": "Commoners could not fly samurai standards, so they flew fish instead."},
+    {"image": "kh-koinobori", "title": "And still flying", "artist": "Tottori, modern", "text": "In the 1931 song, black is the father and red is the child. The mother only appears around 1960."}
+  ]
+}

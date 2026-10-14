@@ -1,0 +1,111 @@
+{
+ "name": "B&M Aquatics",
+ "tagline": "Moving water, and the fish that live in it.",
+ "since": "Family owned since 2003",
+ "story": [
+  "Robert \"Bob\" Poulas and his wife Kathy bought B&M Aquatics in 2003. They have run it since with their children, their friends, and the most important member of the family: Lucas.",
+  "The business sits on Route 94 in Hamburg, New Jersey. There is a retail store, a greenhouse full of koi, a second greenhouse of tropical and hardy plants, and seven ponds outside.",
+  "The ponds are not decoration. They are there so you can see a finished pond at full size, in daylight, with fish in it, before you commit to building one. Anyone can show you a photograph."
+ ],
+ "ethos": "The thing customers mention most often is not the fish or the ponds. It is being told the truth, including when the truth costs B&M the sale. If your pump only needs cleaning, they will say so. That is why people come back after twenty years.",
+ "offers": [
+  "Seven display ponds: walk them, watch the fish, listen to the water",
+  "A koi greenhouse: stock you can look at properly before choosing",
+  "A plant greenhouse: lilies, lotus, marginals and oxygenators, grown on site",
+  "Pond design & build, waterfalls and streams, including pondless",
+  "Seasonal service: spring opening, autumn closing, winter checks",
+  "Repair & water quality: bring a water sample and get a straight answer"
+ ],
+ "rating": "4.8 ★ from 128 Google reviews",
+ "address": "3408 New Jersey Highway 94, Hamburg, NJ 07419",
+ "phone": "973-209-1185",
+ "tel": "+19732091185",
+ "web": "https://aquatics.jelia.nyc/",
+ "maps": "https://maps.apple.com/?q=B%26M%20Aquatics&address=3408%20NJ-94,%20Hamburg,%20NJ%2007419",
+ "hoursNote": "Hours change with the seasons, so please call ahead before you drive out.",
+ "why_price": [
+  {
+   "title": "Almost none of it is the variety",
+   "text": "Below about twelve inches, variety barely moves the price. One national dealer lists thirteen varieties at exactly the same price in the 12–14″ band. Variety only dominates at selected and show grade."
+  },
+  {
+   "title": "It is selection",
+   "text": "Japanese breeders cull three or four times a summer. Under 0.5% of fry survive to autumn. A graded koi carries the cost of the hundreds of siblings that did not make it."
+  },
+  {
+   "title": "And size, non-linearly",
+   "text": "Price scales roughly with the square of length: double the length, expect around four times the price. Past about twenty inches it is about how few fish get that big while keeping their shape and skin."
+  },
+  {
+   "title": "Body before pattern",
+   "text": "Pattern catches your eye; conformation holds value. The pattern changes as a koi grows. The body does not."
+  }
+ ],
+ "buying": [
+  {
+   "title": "Watch it swim first",
+   "text": "Steady, level, both pectorals working evenly. Anything listing, hanging or clamping: walk away."
+  },
+  {
+   "title": "Body before pattern",
+   "text": "Look down from above. Full and symmetrical, not thin or lopsided."
+  },
+  {
+   "title": "Skin quality",
+   "text": "The white should read like porcelain, not cream. Sharp pattern edges hold up better as it grows."
+  },
+  {
+   "title": "Fins and gills",
+   "text": "No red streaks, no ragged edges, no rapid gill movement."
+  },
+  {
+   "title": "Buy for the pond you have",
+   "text": "Koi reach two feet. A 20″ koi is about thirteen times the mass of a 10″ one, and thirteen times the load on your filter."
+  },
+  {
+   "title": "Quarantine new fish",
+   "text": "Two to four weeks apart from the pond. It is dull, and it is the single thing that saves whole collections."
+  }
+ ],
+ "feeding": {
+  "note": "General guidance for outdoor ponds. Koi are cold-blooded: their digestion follows the water, not the calendar. Measure the water, not the air.",
+  "bands": [
+   {
+    "lo": 32,
+    "hi": 50,
+    "label": "Below 50°F",
+    "advice": "Stop feeding. Koi can't digest properly in cold water, and uneaten food fouls the pond. They live on reserves until spring.",
+    "color": "#5B8DB8"
+   },
+   {
+    "lo": 50,
+    "hi": 60,
+    "label": "50–60°F",
+    "advice": "Low-protein wheat-germ food, once a day at most, and only what they finish in a few minutes. Spring and autumn shoulder seasons.",
+    "color": "#5FA3A0"
+   },
+   {
+    "lo": 60,
+    "hi": 75,
+    "label": "60–75°F",
+    "advice": "Normal staple food, two to three small feeds a day. Koi are active and growing.",
+    "color": "#6DB56D"
+   },
+   {
+    "lo": 75,
+    "hi": 85,
+    "label": "75–85°F",
+    "advice": "Peak season. Higher-protein growth or colour food, several small feeds a day. Watch filtration: more food means more waste.",
+    "color": "#E0A030"
+   },
+   {
+    "lo": 85,
+    "hi": 95,
+    "label": "Above 85°F",
+    "advice": "Ease off. Warm water holds less oxygen. Feed lightly, add aeration, and feed in the cooler morning.",
+    "color": "#D7261E"
+   }
+  ],
+  "rule": "The five-minute rule: feed only what they clear in about five minutes. Overfeeding is the most common way a healthy pond goes bad."
+ }
+}

@@ -1,0 +1,795 @@
+{
+ "groups": [
+  {
+   "id": "gosanke",
+   "name": "Gosanke",
+   "jp": "御三家",
+   "about": "The Big Three. They dominate shows and most serious collections. Learn to tell them apart and the rest gets much easier."
+  },
+  {
+   "id": "utsuri",
+   "name": "Utsurimono",
+   "jp": "写り物",
+   "about": "Black base with exactly one other colour wrapping it. Two colours, not three."
+  },
+  {
+   "id": "bekko",
+   "name": "Bekko",
+   "jp": "鼈甲",
+   "about": "The reverse of Utsuri: a solid base colour with small black stepping-stone spots on the back only."
+  },
+  {
+   "id": "asagi",
+   "name": "Asagi & Shusui",
+   "jp": "浅黄・秋翠",
+   "about": "Blue, net-scaled fish with red on the flanks. Asagi is the oldest variety; Shusui is its scaleless descendant."
+  },
+  {
+   "id": "koromo",
+   "name": "Koromo & Goshiki",
+   "jp": "衣・五色",
+   "about": "Robed koi: a darker reticulation laid over the red of a Kohaku-type pattern."
+  },
+  {
+   "id": "hikari",
+   "name": "Hikarimono",
+   "jp": "光り物",
+   "about": "Metallic koi. Ogon and its relatives: one shining colour, sometimes with a scale pattern."
+  },
+  {
+   "id": "hikarimoyo",
+   "name": "Hikari-moyo & Utsuri",
+   "jp": "光り模様",
+   "about": "Metallic skin carrying two or more colours: metallic versions of the classic patterns."
+  },
+  {
+   "id": "kawarimono",
+   "name": "Kawarimono",
+   "jp": "変わり物",
+   "about": "The 'odd' class: every non-metallic koi that fits no other class. Chagoi, Soragoi, Kumonryu and friends."
+  },
+  {
+   "id": "tancho",
+   "name": "Tancho",
+   "jp": "丹頂",
+   "about": "One round red spot on the head and nothing else. Named after the red-crowned crane."
+  },
+  {
+   "id": "form",
+   "name": "Scales & forms",
+   "jp": "鱗",
+   "about": "Not varieties: these describe how a fish is built. Any of them can be combined with almost any variety."
+  }
+ ],
+ "grades": {
+  "sizes": [
+   "3–5″",
+   "6–8″",
+   "9–12″",
+   "14–18″",
+   "20″+"
+  ],
+  "rows": [
+   {
+    "grade": "Pond grade",
+    "bands": [
+     "$9–$28",
+     "$24–$70",
+     "$70–$150",
+     "rare",
+     "rare"
+    ],
+    "lo": 9,
+    "hi": 150
+   },
+   {
+    "grade": "Hobbyist (US domestic)",
+    "bands": [
+     "$90–$100",
+     "$130–$200",
+     "$250–$400",
+     "$450–$900",
+     "$900–$3,300"
+    ],
+    "lo": 90,
+    "hi": 3300
+   },
+   {
+    "grade": "Japanese import",
+    "bands": [
+     "$66–$94",
+     "$135–$200",
+     "about $440",
+     "$550–$715",
+     "—"
+    ],
+    "lo": 66,
+    "hi": 715
+   },
+   {
+    "grade": "Breeder-attributed",
+    "bands": [
+     "—",
+     "$175–$375",
+     "$225–$1,200",
+     "$375–$1,500",
+     "$6,000–$35,000"
+    ],
+    "lo": 175,
+    "hi": 35000
+   },
+   {
+    "grade": "Show quality",
+    "bands": [
+     "—",
+     "$400–$1,500",
+     "$900–$3,500",
+     "$1,500–$8,000",
+     "$4,000+"
+    ],
+    "lo": 400,
+    "hi": 8000
+   }
+  ],
+  "note": "Rough US retail bands, by size and grade. Bands, not quotes, and deliberately wide: individual fish vary enormously. Ask B&M what is actually in the greenhouse."
+ },
+ "varieties": [
+  {
+   "slug": "kohaku",
+   "name": "Kohaku",
+   "kanji": "紅白",
+   "group": "gosanke",
+   "photo": "kohaku",
+   "colors": [
+    "#FFFFFF",
+    "#D7261E"
+   ],
+   "price": "$70–$200",
+   "est": false,
+   "rarity": 1,
+   "blurb": "Red on a pure white ground, and no black anywhere. One black speck and it is something else. The benchmark variety.",
+   "confused": [
+    "Sanke",
+    "Goshiki"
+   ],
+   "fact": "\"Koi begin and end with Kohaku\" is the hobby's oldest saying. The 2021 All Japan Grand Champion was a 102 cm Kohaku."
+  },
+  {
+   "slug": "sanke",
+   "name": "Taisho Sanke",
+   "kanji": "大正三色",
+   "group": "gosanke",
+   "photo": "sanke",
+   "colors": [
+    "#FFFFFF",
+    "#D7261E",
+    "#111111"
+   ],
+   "price": "$70–$220",
+   "est": false,
+   "rarity": 1,
+   "blurb": "Kohaku plus black, but the black sits above the lateral line and never on the head. A Kohaku wearing punctuation.",
+   "confused": [
+    "Showa",
+    "Bekko"
+   ],
+   "fact": "\"Sanke\" is not short for Sanshoku. It fossilises 三毛, \"three-hair\", the same word as mikeneko, the calico cat."
+  },
+  {
+   "slug": "showa",
+   "name": "Showa Sanshoku",
+   "kanji": "昭和三色",
+   "group": "gosanke",
+   "photo": "showa",
+   "colors": [
+    "#111111",
+    "#D7261E",
+    "#FFFFFF"
+   ],
+   "price": "$70–$240",
+   "est": false,
+   "rarity": 1,
+   "blurb": "A black fish with red and white on it. The tell: Showa has black on the head and wrapping the body. Sanke does not.",
+   "confused": [
+    "Sanke",
+    "Utsuri"
+   ],
+   "fact": "First bred in 1927 by Hoshino Shigekichi, but the Showa you can buy is really a 1964 fish. The originals had a grey ground."
+  },
+  {
+   "slug": "utsurimono",
+   "name": "Shiro Utsuri",
+   "kanji": "白写り",
+   "group": "utsuri",
+   "photo": "utsurimono",
+   "colors": [
+    "#111111",
+    "#FFFFFF"
+   ],
+   "price": "$80–$240",
+   "est": false,
+   "rarity": 2,
+   "blurb": "Black base with exactly one other colour wrapping it: white (Shiro), red (Hi) or yellow (Ki). Two colours, not three.",
+   "confused": [
+    "Showa"
+   ],
+   "fact": "Utsuri means \"reflection\": the white and black mirror each other across the body."
+  },
+  {
+   "slug": "hi_utsuri",
+   "name": "Hi Utsuri",
+   "kanji": "緋写り",
+   "group": "utsuri",
+   "photo": "hi_utsuri",
+   "colors": [
+    "#111111",
+    "#D7261E"
+   ],
+   "price": "$80–$260",
+   "est": true,
+   "rarity": 3,
+   "blurb": "Black wrapping a red-orange ground. Deep, even red is hard to get against heavy black, so a good one stands out.",
+   "confused": [
+    "Showa",
+    "Aka Matsuba"
+   ],
+   "fact": "Hi (緋) is the scarlet used across koi names: higoi, the red carp, is where colour breeding started."
+  },
+  {
+   "slug": "ki_utsuri",
+   "name": "Ki Utsuri",
+   "kanji": "黄写り",
+   "group": "utsuri",
+   "photo": null,
+   "colors": [
+    "#111111",
+    "#F2C230"
+   ],
+   "price": "$90–$300",
+   "est": true,
+   "rarity": 4,
+   "blurb": "Black over yellow. The rarest of the three Utsuri, and the oldest: the yellow line predates the white one.",
+   "confused": [
+    "Hi Utsuri",
+    "Kigoi"
+   ],
+   "fact": "Ki Utsuri appeared before Shiro Utsuri, but the yellow is hard to fix, so they stay uncommon."
+  },
+  {
+   "slug": "shiro_bekko",
+   "name": "Shiro Bekko",
+   "kanji": "白鼈甲",
+   "group": "bekko",
+   "photo": "shiro_bekko",
+   "colors": [
+    "#FFFFFF",
+    "#111111"
+   ],
+   "price": "$60–$200",
+   "est": true,
+   "rarity": 2,
+   "blurb": "A clean white fish with small black spots along the back, and none on the head. Simple, crisp, often underrated.",
+   "confused": [
+    "Shiro Utsuri",
+    "Sanke"
+   ],
+   "fact": "Bekko means \"tortoiseshell\". Take the red off a Sanke and a Shiro Bekko is what is left."
+  },
+  {
+   "slug": "aka_bekko",
+   "name": "Aka Bekko",
+   "kanji": "赤鼈甲",
+   "group": "bekko",
+   "photo": null,
+   "colors": [
+    "#D7261E",
+    "#111111"
+   ],
+   "price": "$60–$200",
+   "est": true,
+   "rarity": 3,
+   "blurb": "Solid red body with black stepping-stone spots on the back. Bold from across the pond.",
+   "confused": [
+    "Hi Utsuri"
+   ],
+   "fact": "The difference from Hi Utsuri: Bekko black sits on top as spots, Utsuri black wraps around the body."
+  },
+  {
+   "slug": "asagi",
+   "name": "Asagi",
+   "kanji": "浅黄",
+   "group": "asagi",
+   "photo": "asagi",
+   "colors": [
+    "#6E8FB3",
+    "#E0602B"
+   ],
+   "price": "$70–$200",
+   "est": false,
+   "rarity": 2,
+   "blurb": "Blue net-patterned back with red running along the flanks and into the fins. The oldest variety, closest to the wild ancestor.",
+   "confused": [
+    "Shusui"
+   ],
+   "fact": "The only variety with no founder and no date. Japanese sources openly say its origin was never written down."
+  },
+  {
+   "slug": "shusui",
+   "name": "Shusui",
+   "kanji": "秋翠",
+   "group": "asagi",
+   "photo": "shusui",
+   "colors": [
+    "#8EA9C8",
+    "#E0602B"
+   ],
+   "price": "$70–$240",
+   "est": true,
+   "rarity": 2,
+   "blurb": "A scaleless Asagi: smooth sky-blue back with one neat row of mirror scales down the spine, red on the sides.",
+   "confused": [
+    "Asagi"
+   ],
+   "fact": "Not a Niigata fish at all. Made in Tokyo in the 1910s by a goldfish dealer, from German scaleless carp."
+  },
+  {
+   "slug": "goshiki",
+   "name": "Goshiki",
+   "kanji": "五色",
+   "group": "koromo",
+   "photo": "goshiki",
+   "colors": [
+    "#2E3A55",
+    "#D7261E",
+    "#FFFFFF"
+   ],
+   "price": "$90–$280",
+   "est": false,
+   "rarity": 2,
+   "blurb": "\"Five colours\": a Kohaku pattern laid over a reticulated blue-black net. Darkens and lightens with the seasons.",
+   "confused": [
+    "Kohaku",
+    "Asagi"
+   ],
+   "fact": "The same Goshiki can look almost black in cold water and nearly Kohaku-bright in summer."
+  },
+  {
+   "slug": "ai_goromo",
+   "name": "Ai Goromo",
+   "kanji": "藍衣",
+   "group": "koromo",
+   "photo": null,
+   "colors": [
+    "#FFFFFF",
+    "#D7261E",
+    "#2E4A7A"
+   ],
+   "price": "$90–$300",
+   "est": true,
+   "rarity": 3,
+   "blurb": "A Kohaku whose red scales are edged in indigo blue, like a robe thrown over the pattern.",
+   "confused": [
+    "Goshiki",
+    "Budo Goromo"
+   ],
+   "fact": "Ai is indigo: the dye that coloured Japanese work clothes for centuries."
+  },
+  {
+   "slug": "goromo",
+   "name": "Budo Goromo",
+   "kanji": "葡萄衣",
+   "group": "koromo",
+   "photo": "goromo",
+   "colors": [
+    "#FFFFFF",
+    "#5B2149"
+   ],
+   "price": "$180–$550",
+   "est": false,
+   "rarity": 4,
+   "blurb": "\"Grape robe\": the red is overlaid with a darker reticulation so it reads as bunches of grapes. Uncommon and priced accordingly.",
+   "confused": [
+    "Goshiki",
+    "Ai Goromo"
+   ],
+   "fact": "One of the few varieties where the type itself, not just the grade, pushes the price up at small sizes."
+  },
+  {
+   "slug": "ogon",
+   "name": "Yamabuki Ogon",
+   "kanji": "山吹黄金",
+   "group": "hikari",
+   "photo": "ogon",
+   "colors": [
+    "#F2C230",
+    "#FFE27A"
+   ],
+   "price": "$60–$200",
+   "est": false,
+   "rarity": 1,
+   "blurb": "A single solid metallic colour with no pattern at all: here, bright yellow-gold. Ogon is the family; the colour names the fish.",
+   "confused": [
+    "Platinum",
+    "Hariwake"
+   ],
+   "fact": "The founder fish was caught in 1921; Sawata Aoki's line took a quarter-century to fix the gold."
+  },
+  {
+   "slug": "platinum_ogon",
+   "name": "Platinum Ogon",
+   "kanji": "プラチナ黄金",
+   "group": "hikari",
+   "photo": null,
+   "colors": [
+    "#F2F2EE",
+    "#C9CDD2"
+   ],
+   "price": "$60–$200",
+   "est": true,
+   "rarity": 1,
+   "blurb": "Solid metallic white, like polished silver. Glows in a dark-bottomed pond and is easy to spot from across the yard.",
+   "confused": [
+    "Yamabuki Ogon",
+    "Ghost koi"
+   ],
+   "fact": "Metallic koi are judged on lustre over the head and fins, not pattern. There isn't one."
+  },
+  {
+   "slug": "matsuba",
+   "name": "Aka Matsuba",
+   "kanji": "赤松葉",
+   "group": "hikari",
+   "photo": "matsuba",
+   "colors": [
+    "#C8341F",
+    "#5A1A10"
+   ],
+   "price": "$70–$220",
+   "est": false,
+   "rarity": 2,
+   "blurb": "\"Pine cone\": each scale is darkened in the centre, giving a pine-cone texture over a solid red base.",
+   "confused": [
+    "Ogon",
+    "Hi Utsuri"
+   ],
+   "fact": "The matsuba net appears on gold, red and white fish. The base colour gives the name."
+  },
+  {
+   "slug": "kujaku",
+   "name": "Kujaku",
+   "kanji": "孔雀",
+   "group": "hikarimoyo",
+   "photo": "kujaku",
+   "colors": [
+    "#E9E6DE",
+    "#E36A1E",
+    "#3A4A5E"
+   ],
+   "price": "$90–$300",
+   "est": false,
+   "rarity": 2,
+   "blurb": "\"Peacock\": a metallic body with a pine-cone scale net and red or orange markings over the top.",
+   "confused": [
+    "Hariwake",
+    "Goshiki"
+   ],
+   "fact": "One of the flashiest koi in sunlight. Best seen from above, the way koi are meant to be viewed."
+  },
+  {
+   "slug": "hariwake",
+   "name": "Hariwake",
+   "kanji": "張分け",
+   "group": "hikarimoyo",
+   "photo": "hariwake",
+   "colors": [
+    "#F2F2EE",
+    "#F2A12E"
+   ],
+   "price": "$60–$220",
+   "est": true,
+   "rarity": 2,
+   "blurb": "Two metallic colours only: platinum with gold or orange patches. Clean, bright, two-tone.",
+   "confused": [
+    "Kujaku",
+    "Ogon"
+   ],
+   "fact": "Add a pine-cone scale net and a Hariwake becomes a Kujaku."
+  },
+  {
+   "slug": "kin_showa",
+   "name": "Kin Showa",
+   "kanji": "金昭和",
+   "group": "hikarimoyo",
+   "photo": null,
+   "colors": [
+    "#2A2A2A",
+    "#E0602B",
+    "#F2E6C8"
+   ],
+   "price": "$90–$300",
+   "est": true,
+   "rarity": 3,
+   "blurb": "A Showa with metallic skin, so the black, red and white all shine. Dramatic in sunlight.",
+   "confused": [
+    "Showa",
+    "Kin Ki Utsuri"
+   ],
+   "fact": "Metallic skin tends to soften black, so a sharp-patterned Kin Showa is a breeding achievement."
+  },
+  {
+   "slug": "chagoi",
+   "name": "Chagoi",
+   "kanji": "茶鯉",
+   "group": "kawarimono",
+   "photo": "chagoi",
+   "colors": [
+    "#8B6A3E",
+    "#B48A55"
+   ],
+   "price": "$50–$180",
+   "est": false,
+   "rarity": 1,
+   "blurb": "Plain brown or tea-coloured. Deeply unfashionable, the friendliest fish in the pond, usually the first to hand-feed, and it teaches the others to.",
+   "confused": [
+    "Soragoi",
+    "Ochiba"
+   ],
+   "fact": "Chagoi grow big and calm. Many keepers add one first precisely to tame the rest."
+  },
+  {
+   "slug": "soragoi",
+   "name": "Soragoi",
+   "kanji": "空鯉",
+   "group": "kawarimono",
+   "photo": null,
+   "colors": [
+    "#8E9AA6",
+    "#B9C2CB"
+   ],
+   "price": "$50–$180",
+   "est": true,
+   "rarity": 2,
+   "blurb": "\"Sky carp\": solid soft grey-blue with a fine net of scales. Quiet, friendly, and often grows huge.",
+   "confused": [
+    "Chagoi",
+    "Ochiba"
+   ],
+   "fact": "Soragoi crossed with Chagoi is one route to Ochiba Shigure."
+  },
+  {
+   "slug": "ochiba",
+   "name": "Ochiba Shigure",
+   "kanji": "落葉時雨",
+   "group": "kawarimono",
+   "photo": "ochiba",
+   "colors": [
+    "#8E9AA6",
+    "#B87333"
+   ],
+   "price": "$80–$250",
+   "est": false,
+   "rarity": 2,
+   "blurb": "\"Autumn leaves on water\". Copper or bronze over blue-grey. Understated, and it looks extraordinary in a planted pond.",
+   "confused": [
+    "Chagoi",
+    "Soragoi"
+   ],
+   "fact": "The name is a haiku image: fallen leaves drifting in a late-autumn shower."
+  },
+  {
+   "slug": "karashigoi",
+   "name": "Karashigoi",
+   "kanji": "芥子鯉",
+   "group": "kawarimono",
+   "photo": "karashigoi",
+   "colors": [
+    "#C9A23A",
+    "#E3C565"
+   ],
+   "price": "$50–$200",
+   "est": true,
+   "rarity": 2,
+   "blurb": "Solid mustard-yellow, non-metallic. A gentle giant: one of the biggest-growing koi you can buy.",
+   "confused": [
+    "Kigoi",
+    "Chagoi"
+   ],
+   "fact": "Karashi is Japanese mustard, the hot yellow kind served with oden."
+  },
+  {
+   "slug": "kigoi",
+   "name": "Kigoi",
+   "kanji": "黄鯉",
+   "group": "kawarimono",
+   "photo": null,
+   "colors": [
+    "#F2D230",
+    "#F7E27A"
+   ],
+   "price": "$60–$220",
+   "est": true,
+   "rarity": 3,
+   "blurb": "Plain lemon-yellow, non-metallic. Rarer than it looks, because good even yellow is hard to breed.",
+   "confused": [
+    "Karashigoi",
+    "Yamabuki Ogon"
+   ],
+   "fact": "The red-eyed albino form, Akame Kigoi, is a collector's curiosity."
+  },
+  {
+   "slug": "benigoi",
+   "name": "Benigoi",
+   "kanji": "紅鯉",
+   "group": "kawarimono",
+   "photo": null,
+   "colors": [
+    "#C8261E",
+    "#E04A2E"
+   ],
+   "price": "$60–$220",
+   "est": true,
+   "rarity": 3,
+   "blurb": "Solid deep red, nose to tail, non-metallic. Like a Kohaku with no white at all.",
+   "confused": [
+    "Aka Matsuba",
+    "Higoi"
+   ],
+   "fact": "Beni is the deep crimson of safflower dye; hi is the brighter scarlet. Both words are used for koi reds."
+  },
+  {
+   "slug": "kumonryu",
+   "name": "Kumonryu",
+   "kanji": "九紋竜",
+   "group": "kawarimono",
+   "photo": null,
+   "colors": [
+    "#111111",
+    "#F2F2EE"
+   ],
+   "price": "$60–$250",
+   "est": true,
+   "rarity": 2,
+   "blurb": "A scaleless black-and-white fish that changes its pattern with the seasons and water temperature. No two years look alike.",
+   "confused": [
+    "Shiro Utsuri",
+    "Kikokuryu"
+   ],
+   "fact": "Named after the nine-dragon tattoo of a hero in Water Margin. The fish's swirls were said to resemble it."
+  },
+  {
+   "slug": "kikokuryu",
+   "name": "Kikokuryu",
+   "kanji": "輝黒竜",
+   "group": "hikarimoyo",
+   "photo": null,
+   "colors": [
+    "#1A1A1A",
+    "#E6E6E6"
+   ],
+   "price": "$80–$300",
+   "est": true,
+   "rarity": 3,
+   "blurb": "\"Sparkling black dragon\": a metallic Kumonryu. Shining black and platinum, scaleless.",
+   "confused": [
+    "Kumonryu"
+   ],
+   "fact": "Add red or orange and it becomes a Beni Kikokuryu, one of the most colourful modern koi."
+  },
+  {
+   "slug": "ghost_koi",
+   "name": "Ghost koi",
+   "kanji": "ゴースト鯉",
+   "group": "kawarimono",
+   "photo": null,
+   "colors": [
+    "#4A5056",
+    "#D7D2C2"
+   ],
+   "price": "$20–$120",
+   "est": true,
+   "rarity": 1,
+   "blurb": "A koi × metallic wild-carp hybrid: dark, shimmering, and appears to fade in and out of the water. Hardy and fast-growing.",
+   "confused": [
+    "Platinum Ogon",
+    "Soragoi"
+   ],
+   "fact": "Not a recognised show variety, but hugely popular in backyard ponds because ghosts are tough."
+  },
+  {
+   "slug": "tancho",
+   "name": "Tancho",
+   "kanji": "丹頂",
+   "group": "tancho",
+   "photo": "tancho",
+   "colors": [
+    "#FFFFFF",
+    "#D7261E"
+   ],
+   "price": "+ on base variety",
+   "est": false,
+   "rarity": 3,
+   "blurb": "One round red spot on the head and nothing else. If the body carries red too, it is a Maruten, not a Tancho.",
+   "confused": [
+    "Maruten Kohaku"
+   ],
+   "fact": "The tancho is Japan's red-crowned crane, and the spot echoes the Japanese flag. A perfectly round, centred spot is rare."
+  },
+  {
+   "slug": "kinginrin",
+   "name": "Kinginrin",
+   "kanji": "金銀鱗",
+   "group": "form",
+   "photo": "kinginrin",
+   "colors": [
+    "#FFFFFF",
+    "#C9CDD2",
+    "#D7261E"
+   ],
+   "price": "+30% on base",
+   "est": false,
+   "rarity": 2,
+   "blurb": "Reflective \"diamond\" scales that can be added to almost any variety. Judged as its own class at shows.",
+   "confused": [
+    "Metallic Hikari types"
+   ],
+   "fact": "The 1929 Ginrin and the 1969 Diamond Ginrin are two separate events routinely merged into one."
+  },
+  {
+   "slug": "doitsu",
+   "name": "Doitsu",
+   "kanji": "ドイツ",
+   "group": "form",
+   "photo": "doitsu",
+   "colors": [
+    "#FFFFFF",
+    "#D7261E",
+    "#111111"
+   ],
+   "price": "As base variety",
+   "est": false,
+   "rarity": 2,
+   "blurb": "Scaleless, with mirror scale rows along the back and flanks. Pattern edges read sharper without scale texture softening them.",
+   "confused": [
+    "Shusui"
+   ],
+   "fact": "Doitsu means \"German\". Of the 30 mirror carp shipped from Munich in 1904, five fry survived. Four were female."
+  },
+  {
+   "slug": "butterfly",
+   "name": "Butterfly / longfin",
+   "kanji": "鰭長",
+   "group": "form",
+   "photo": "butterfly",
+   "colors": [
+    "#F2F2EE",
+    "#E36A1E"
+   ],
+   "price": "$30–$200",
+   "est": false,
+   "rarity": 1,
+   "blurb": "Long trailing fins. A Western favourite, and not a judged variety in Japan, where it is often cheaper rather than dearer.",
+   "confused": [],
+   "fact": "Developed in the 1980s by crossing koi with Indonesian longfin river carp."
+  },
+  {
+   "slug": "midorigoi",
+   "name": "Midorigoi",
+   "kanji": "緑鯉",
+   "group": "kawarimono",
+   "photo": "midorigoi",
+   "colors": [
+    "#C9C76A",
+    "#6F8A4A"
+   ],
+   "price": "$100–$350",
+   "est": true,
+   "rarity": 4,
+   "blurb": "The green koi: a scaleless, yellow-green fish that glows like pond water in sunlight. Often fades to a duller yellow as it ages.",
+   "confused": [
+    "Karashigoi",
+    "Ki Shusui"
+   ],
+   "fact": "Green is the one colour koi breeding almost never produces. Midorigoi come from crossing Shusui with Yamabuki Ogon."
+  }
+ ]
+}
