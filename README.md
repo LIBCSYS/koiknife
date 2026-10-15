@@ -1,3 +1,5 @@
+<p align="center"><img src="docs/brand/koiknife-banner.png" alt="KoiKnife — The Swiss Army Knife of Koi Knowledge" width="820"></p>
+
 # KoiKnife 1.0.0 — The Swiss Army Knife of Koi Knowledge
 
 ## Get KoiKnife
