@@ -149,33 +149,62 @@ class _Tool {
   _Tool(this.icon, this.title, this.sub, this.color, this.onTap);
 }
 
+/// J (2026-10-14): toolkit tiles are real koi, not flat teal: each tool gets its own variety's
+/// photo (licensed + credited like every other photo in the app). Titles stay readable over any
+/// photo through a dark fade at the bottom; the icon chip keeps the tool's colour.
+const _toolKoi = {
+  'Identify': 'kohaku', 'History': 'showa', 'Prices': 'ogon', 'Supplies': 'asagi',
+  'Feeding': 'chagoi', 'Pond year': 'ochiba', 'Water tests': 'shusui', 'Before you buy': 'sanke',
+  'Name That Koi': 'goshiki', 'My Koi': 'tancho', 'B&M Aquatics': 'kinginrin', 'Koi Pond': 'butterfly',
+  'Pond FAQ': 'midorigoi',
+};
+
 class _ToolTile extends StatelessWidget {
   final _Tool tool;
   const _ToolTile(this.tool);
   @override
   Widget build(BuildContext context) {
+    final koi = _toolKoi[tool.title];
     return Card(
+      clipBehavior: Clip.antiAlias,
       child: InkWell(
         onTap: tool.onTap,
-        child: Padding(
-          padding: const EdgeInsets.all(14),
-          child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-            Container(
-              padding: const EdgeInsets.all(10),
-              decoration: BoxDecoration(color: tool.color.withValues(alpha: 0.2), borderRadius: BorderRadius.circular(14)),
-              child: Icon(tool.icon, color: tool.color, size: 30),
+        child: Stack(fit: StackFit.expand, children: [
+          if (koi != null)
+            // decode ~640 px wide: sharp on a phone tile without holding 13 full-size photos in memory
+            Image.asset('assets/koi/$koi.jpg', fit: BoxFit.cover, cacheWidth: 640, excludeFromSemantics: true),
+          const DecoratedBox(
+            decoration: BoxDecoration(
+              gradient: LinearGradient(
+                begin: Alignment.topCenter,
+                end: Alignment.bottomCenter,
+                colors: [Color(0x33071C21), Color(0x11071C21), Color(0xE6071C21)],
+                stops: [0, 0.35, 1],
+              ),
             ),
-            const Spacer(),
-            Text(tool.title,
-                maxLines: 1,
-                overflow: TextOverflow.ellipsis,
-                style: const TextStyle(fontSize: 19, fontWeight: FontWeight.w800)),
-            Text(tool.sub,
-                maxLines: 1,
-                overflow: TextOverflow.ellipsis,
-                style: const TextStyle(fontSize: 15, color: KoiColors.mist)),
-          ]),
-        ),
+          ),
+          Padding(
+            padding: const EdgeInsets.all(14),
+            child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
+              Container(
+                padding: const EdgeInsets.all(10),
+                decoration: BoxDecoration(color: const Color(0xCC071C21), borderRadius: BorderRadius.circular(14)),
+                child: Icon(tool.icon, color: tool.color, size: 30),
+              ),
+              const Spacer(),
+              Text(tool.title,
+                  maxLines: 1,
+                  overflow: TextOverflow.ellipsis,
+                  style: const TextStyle(fontSize: 19, fontWeight: FontWeight.w800, color: Colors.white,
+                      shadows: [Shadow(blurRadius: 6, color: Colors.black)])),
+              Text(tool.sub,
+                  maxLines: 1,
+                  overflow: TextOverflow.ellipsis,
+                  style: const TextStyle(fontSize: 15, color: Color(0xFFE6EEEC),
+                      shadows: [Shadow(blurRadius: 6, color: Colors.black)])),
+            ]),
+          ),
+        ]),
       ),
     );
   }
