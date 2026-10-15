@@ -1,6 +1,6 @@
 <p align="center"><img src="docs/brand/koiknife-banner.png" alt="KoiKnife — The Swiss Army Knife of Koi Knowledge" width="820"></p>
 
-# KoiKnife 1.0.0 — The Swiss Army Knife of Koi Knowledge
+# KoiKnife — The Swiss Army Knife of Koi Knowledge
 
 ## Get KoiKnife
 - **iPhone & iPad:** App Store, https://apps.apple.com/app/id6822839703 (1.0.1 in review)
