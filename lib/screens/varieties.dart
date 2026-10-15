@@ -198,10 +198,10 @@ class VarietyDetail extends StatelessWidget {
     final g = d.group(v.group);
     final t = Theme.of(context).textTheme;
     final h = MediaQuery.sizeOf(context).height;
-    final related = [
+    final related = {
       for (final name in v.confused)
-        ...d.varieties.where((x) => x.name.toLowerCase().contains(name.toLowerCase().split(' ').first))
-    ].toSet().where((x) => x.slug != v.slug).toList();
+        ...d.varieties.where((x) => isNamed(x, name))
+    }.where((x) => x.slug != v.slug).toList();
 
     return Scaffold(
       body: CustomScrollView(slivers: [
@@ -217,7 +217,7 @@ class VarietyDetail extends StatelessWidget {
                       context,
                       MaterialPageRoute(
                           builder: (_) => PhotoViewer(
-                              asset: v.image, title: v.name, heroTag: 'koi-${v.slug}-full')))
+                              asset: v.image, title: v.name, heroTag: 'koi-${v.slug}')))
                   : null,
               child: Container(color: KoiColors.pond, child: KoiImage(v, fit: BoxFit.cover)),
             ),
@@ -263,7 +263,7 @@ class VarietyDetail extends StatelessWidget {
                             context, MaterialPageRoute(builder: (_) => VarietyDetail(r))),
                       ),
                     for (final name in v.confused.where(
-                        (n) => !related.any((r) => r.name.toLowerCase().contains(n.toLowerCase().split(' ').first))))
+                        (n) => !related.any((r) => isNamed(r, n))))
                       Chip(label: Text(name)),
                   ]),
                 ],

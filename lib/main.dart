@@ -110,7 +110,10 @@ class _ShellState extends State<Shell> {
       const PriceScreen(),
       const SuppliesScreen(),
     ];
-    final body = IndexedStack(index: _tab, children: pages);
+    // IndexedStack keeps every tab alive; TickerMode stops the ponds on the hidden ones (battery).
+    final body = IndexedStack(index: _tab, children: [
+      for (var i = 0; i < pages.length; i++) TickerMode(enabled: i == _tab, child: pages[i]),
+    ]);
     final wide = MediaQuery.sizeOf(context).width >= 840;
 
     if (wide) {

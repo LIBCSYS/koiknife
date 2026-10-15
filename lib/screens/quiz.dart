@@ -31,7 +31,7 @@ class _QuizScreenState extends State<QuizScreen> {
   @override
   void initState() {
     super.initState();
-    SharedPreferences.getInstance().then((p) => setState(() => _best = p.getInt('quiz.best') ?? 0));
+    SharedPreferences.getInstance().then((p) { if (mounted) setState(() => _best = p.getInt('quiz.best') ?? 0); });
   }
 
   void _start(List<Variety> all) {
@@ -50,7 +50,7 @@ class _QuizScreenState extends State<QuizScreen> {
     final pool = all.where((v) => v.slug != answer.slug && v.hasPhoto).toList()..shuffle(_rng);
     // Lookalikes first: they are what people actually mix up.
     pool.sort((a, b) {
-      int s(Variety v) => answer.confused.any((n) => v.name.toLowerCase().contains(n.toLowerCase().split(' ').first)) ? 0 : 1;
+      int s(Variety v) => answer.confused.any((n) => isNamed(v, n)) ? 0 : 1;
       return s(a) - s(b);
     });
     _options = [answer, ...pool.take(3)]..shuffle(_rng);
@@ -230,7 +230,8 @@ class _QuizScreenState extends State<QuizScreen> {
               const SizedBox(height: 12),
               TextButton(
                 onPressed: () =>
-                    Navigator.push(context, MaterialPageRoute(builder: (_) => const VarietiesScreen(wishOnly: false))),
+                    Navigator.push(context, MaterialPageRoute(builder: (_) => Scaffold(
+                        appBar: AppBar(title: const Text('Varieties')), body: const VarietiesScreen(wishOnly: false)))),
                 child: const Text('Study the varieties', style: TextStyle(fontSize: 18)),
               ),
             ]),

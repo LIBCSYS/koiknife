@@ -106,8 +106,13 @@ class ColorSwatches extends StatelessWidget {
       ]);
 }
 
-Future<void> openLink(String url) async {
-  await launchUrl(Uri.parse(url), mode: LaunchMode.externalApplication);
+/// Returns false when the device can't open it (e.g. tel: on an iPad) instead of throwing.
+Future<bool> openLink(String url) async {
+  try {
+    return await launchUrl(Uri.parse(url), mode: LaunchMode.externalApplication);
+  } catch (_) {
+    return false;
+  }
 }
 
 /// The B&M call-to-action that ends most screens: the app's job is to send

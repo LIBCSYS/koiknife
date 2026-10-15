@@ -48,7 +48,7 @@ class HomeScreen extends StatelessWidget {
       _Tool(Icons.checklist_rounded, 'Before you buy', '6-point checklist', const Color(0xFFE36A1E),
           () => push(const BuyingScreen())),
       _Tool(Icons.quiz_rounded, 'Name That Koi', 'Test your eye', const Color(0xFFD94F8A),
-          () => push(const Scaffold(body: QuizScreen()))),
+          () => push(Scaffold(appBar: AppBar(title: const Text('Name That Koi')), body: const QuizScreen()))),
       _Tool(Icons.favorite_rounded, 'My Koi', '${scope.wish.count} saved', KoiColors.red,
           () => push(const VarietiesScreen(wishOnly: true))),
       _Tool(Icons.storefront_rounded, 'B&M Aquatics', 'Hamburg, NJ', const Color(0xFF3FA9A0), () => push(const BMScreen())),
@@ -192,7 +192,7 @@ class _KoiOfTheDay extends StatelessWidget {
         child: SizedBox(
           height: 150,
           child: Row(crossAxisAlignment: CrossAxisAlignment.stretch, children: [
-            SizedBox(width: 140, child: KoiImage(v)),
+            SizedBox(width: 140, child: KoiImage(v, hero: false)),  // grid card owns 'koi-<slug>'
             Expanded(
               child: Padding(
                 padding: const EdgeInsets.all(14),

@@ -154,3 +154,7 @@ class Wishlist extends ChangeNotifier {
 }
 
 Color hex(String h) => Color(int.parse('FF${h.replaceFirst('#', '')}', radix: 16));
+
+/// True when [name] (from a variety's 'often confused with' list) is exactly this variety.
+/// Exact, case-insensitive: matching on the first word linked 'Ki Shusui' to every 'Ki…' variety.
+bool isNamed(Variety v, String name) => v.name.trim().toLowerCase() == name.trim().toLowerCase();

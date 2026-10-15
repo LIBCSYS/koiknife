@@ -192,6 +192,12 @@ class _ChapterReaderState extends State<ChapterReader> {
   late int _page = widget.start;
 
   @override
+  void dispose() {
+    _pc.dispose();   // the reader is opened and closed many times; don't leak controllers
+    super.dispose();
+  }
+
+  @override
   Widget build(BuildContext context) {
     final chapters = KoiScope.of(context).data.chapters;
     return Scaffold(
