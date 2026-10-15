@@ -3,7 +3,11 @@
 // One Flutter codebase → iPhone, iPad, Mac and Android. iPhone is the primary
 // target (J's own device), so layouts are designed phone-first and widen into a
 // side rail on iPad/Mac rather than the other way round.
+import 'dart:io';
+import 'dart:ui' as ui;
+
 import 'package:flutter/material.dart';
+import 'package:flutter/rendering.dart';
 import 'package:flutter/services.dart';
 
 import 'data.dart';
@@ -25,6 +29,22 @@ Future<void> main() async {
   final wish = Wishlist();
   await wish.load();
   runApp(KoiKnifeApp(data: data, wish: wish));
+  if (_shot.isNotEmpty) _captureAndQuit();
+}
+
+// Store-screenshot hook (tools/mac_store_shots.sh): --dart-define=KOI_SHOT=<name> makes the app
+// photograph its own window at 2x after the pond settles, save <name>.png in its temp folder and
+// quit. Needs no Screen Recording permission. Empty (the default) in every store build.
+const _shot = String.fromEnvironment('KOI_SHOT');
+final _shotKey = GlobalKey();
+
+Future<void> _captureAndQuit() async {
+  await Future<void>.delayed(const Duration(seconds: 10));   // images decode, fish spread out
+  final boundary = _shotKey.currentContext!.findRenderObject()! as RenderRepaintBoundary;
+  final image = await boundary.toImage(pixelRatio: 2);
+  final png = await image.toByteData(format: ui.ImageByteFormat.png);
+  File('${Directory.systemTemp.path}/$_shot.png').writeAsBytesSync(png!.buffer.asUint8List());
+  exit(0);
 }
 
 /// Makes data + wishlist reachable from any screen without a state-management package.
@@ -48,12 +68,12 @@ class KoiKnifeApp extends StatelessWidget {
     return KoiScope(
       data: data,
       wish: wish,
-      child: MaterialApp(
+      child: RepaintBoundary(key: _shotKey, child: MaterialApp(
         title: 'KoiKnife',
         debugShowCheckedModeBanner: false,
         theme: koiTheme(),
         home: const Shell(),
-      ),
+      )),
     );
   }
 }
