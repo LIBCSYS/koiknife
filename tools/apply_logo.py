@@ -1,8 +1,11 @@
 """apply_logo.py — every KoiKnife app icon comes from the one brand logo (J, 2026-10-14).
 
-Replaces tools/make_icon.py (the drawn Kohaku). Source: ../brand/koiknife-logo-1024.png.
-  iOS/iPadOS + macOS: each PNG in the AppIcon sets, at the size its own Contents.json declares
-                      (opaque RGB: App Store rejects alpha in the 1024 marketing icon)
+The ONLY icon generator (make_icon.py and flutter_launcher_icons are gone). Source, kept in the repo:
+assets/brand/koiknife-logo-1024.png. Also writes the in-app header logo, assets/brand/logo_round.png.
+  iOS/iPadOS: each PNG in the AppIcon set, at the size its Contents.json declares (opaque RGB:
+              App Store rejects alpha in the 1024 marketing icon; iOS rounds the corners itself)
+  macOS:      macOS does NOT round icons, so the round logo sits on transparency inside Apple's
+              824/1024 icon grid, like every other Dock icon
   Android:           legacy mipmap ic_launcher (full square logo) and the adaptive-icon foreground:
                       the gold-ring circle with transparency outside it, so the launcher's circle /
                       squircle mask never bites into the logo; the outside is filled by
@@ -13,22 +16,23 @@ import json, os, sys
 from PIL import Image, ImageDraw
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-LOGO = os.path.normpath(os.path.join(ROOT, "..", "brand", "koiknife-logo-1024.png"))
+LOGO = os.path.join(ROOT, "assets", "brand", "koiknife-logo-1024.png")
 RING_R = 453            # outer edge of the gold ring in the 1024 master (measured), plus 2 px of slack
 BG_HEX = "#12353A"      # the logo's teal just inside its edge: shows around the adaptive foreground
 
 logo = Image.open(LOGO).convert("RGB")
 assert logo.size == (1024, 1024), "brand master must be 1024x1024"
 
-def appiconset(folder):
+def appiconset(folder, art=None):
     """Fill one Xcode AppIcon set using the sizes its Contents.json asks for."""
+    art = art or logo
     meta = json.load(open(os.path.join(folder, "Contents.json")))
     done = 0
     for img in meta["images"]:
         if "filename" not in img: continue
         pts = float(img["size"].split("x")[0]); scale = int(img["scale"].rstrip("x"))
         px = round(pts * scale)
-        logo.resize((px, px), Image.LANCZOS).save(os.path.join(folder, img["filename"]))
+        art.resize((px, px), Image.LANCZOS).save(os.path.join(folder, img["filename"]))
         done += 1
     return done
 
@@ -42,7 +46,12 @@ def circle_foreground(px):
     return rgba.resize((px, px), Image.LANCZOS)
 
 n_ios = appiconset(os.path.join(ROOT, "ios/Runner/Assets.xcassets/AppIcon.appiconset"))
-n_mac = appiconset(os.path.join(ROOT, "macos/Runner/Assets.xcassets/AppIcon.appiconset"))
+# macOS: round logo scaled into Apple's 824px content box on a transparent 1024 canvas
+mac_art = Image.new("RGBA", (1024, 1024), (0, 0, 0, 0))
+mac_art.alpha_composite(circle_foreground(824), (100, 100))
+n_mac = appiconset(os.path.join(ROOT, "macos/Runner/Assets.xcassets/AppIcon.appiconset"), mac_art)
+# in-app header logo: 44 pt at 3x = 132 px, so the phone never decodes more than it shows
+circle_foreground(132).save(os.path.join(ROOT, "assets", "brand", "logo_round.png"))
 
 res = os.path.join(ROOT, "android/app/src/main/res"); n_and = 0
 for dens, launcher_px in (("mdpi", 48), ("hdpi", 72), ("xhdpi", 96), ("xxhdpi", 144), ("xxxhdpi", 192)):

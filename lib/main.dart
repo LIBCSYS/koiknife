@@ -1,4 +1,4 @@
-// KoiKnife 1.0.0 — the koi guide, presented with B&M Aquatics (Hamburg, NJ).
+// KoiKnife 1.0.2 — the koi guide, presented with B&M Aquatics (Hamburg, NJ).
 //
 // One Flutter codebase → iPhone, iPad, Mac and Android. iPhone is the primary
 // target (J's own device), so layouts are designed phone-first and widen into a
@@ -16,7 +16,8 @@ import 'screens/supplies.dart';
 import 'screens/varieties.dart';
 import 'theme.dart';
 
-const appVersion = '1.0.0';
+// Must match pubspec.yaml's version (test/version_test.dart fails the build if they drift).
+const appVersion = '1.0.2';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();

@@ -1,10 +1,18 @@
-"""First App Store release of KoiKnife: listing, rating, price, screenshots, submit.
+"""App Store release of KoiKnife (version/build from pubspec.yaml): listing, rating, price, screenshots, submit.
 Reuses JellyDazzle's ASC auth (call()). Each step is idempotent-ish and reports its own result."""
 import importlib.util, hashlib, os, glob, json, sys, urllib.request
 from PIL import Image
 spec = importlib.util.spec_from_file_location("asc", "/Users/exeter/dev/m5/assembly/jellydazzle/v3.7.0/tools/asc_release.py")
 asc = importlib.util.module_from_spec(spec); spec.loader.exec_module(asc); call = asc.call
-APP = "6822839703"; BUILD = "c9bce69f-a399-4853-8fa7-ef6921c05874"
+APP = "6822839703"
+# Version + build come from pubspec.yaml ("version: X.Y.Z+N"), so the script can never attach a
+# stale build: it looks up the uploaded build numbered N and submits version X.Y.Z.
+PUBSPEC = os.path.join(os.path.dirname(__file__), "..", "pubspec.yaml")
+VERSION, BUILD_NO = [l.split(":", 1)[1].strip() for l in open(PUBSPEC) if l.startswith("version:")][0].split("+")
+def build_id():
+    bs = call("GET", f"/v1/builds?filter[app]={APP}&filter[version]={BUILD_NO}&filter[processingState]=VALID")["data"]
+    if not bs: raise SystemExit(f"build {BUILD_NO} not uploaded/processed yet")
+    return bs[0]["id"]
 SHOTS = os.path.join(os.path.dirname(__file__), "..", "build", "storeshots")
 
 def step(label, f):
@@ -144,9 +152,9 @@ def main():
                  "attributes": {"uploaded": True, "sourceFileChecksum": hashlib.md5(data).hexdigest()}}})
             n += 1
         print(f"OK   screenshots {dtype}: {n} uploaded, {len(have)} already there")
-    step("attach build 1", lambda: call("PATCH", f"/v1/appStoreVersions/{vid}/relationships/build", {"data": {"type": "builds", "id": BUILD}}))
+    step(f"attach build {BUILD_NO}", lambda: call("PATCH", f"/v1/appStoreVersions/{vid}/relationships/build", {"data": {"type": "builds", "id": build_id()}}))
     if "--submit" in sys.argv:
         asc.APP_ID = APP
-        step("SUBMIT for App Review", lambda: asc.submit("IOS", "1.0.0"))
+        step("SUBMIT for App Review", lambda: asc.submit("IOS", VERSION))
 
 main()
